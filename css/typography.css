@@ -7,12 +7,12 @@ body {
 h1 {
     color: #da2d2d;
     font-family: 'Qwigley', cursive;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: normal;
 }
 
 .main-logo {
-    font-size: 8rem;
+    font-size: 6rem;
     margin-bottom: 20px;
     margin-top: 200px;
 }
@@ -50,13 +50,14 @@ footer a {
     text-decoration: none;
     font-weight: bolder;
     text-align: center;
-    margin: 20px;
+    margin: 10px;
     font-size: 0.8rem;
 }
 
 footer a:hover {
     color: #da2d2d;
 }
+
 
 .post h1 {
     font-size: 6rem;
@@ -99,6 +100,35 @@ footer a:hover {
     margin: 20px;
 }
 
+
 span {
     font-weight: bold;
+}
+
+@media (min-width: 360px) and (max-width: 498px) {
+    .option {
+        font-size: 0.8rem;
+    }
+    h1 {
+        font-size: 3rem;
+    }
+}
+
+@media (min-width: 499px) {
+    .main-logo {
+        font-size: 8rem;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    footer a {
+        margin: 20px;
+    }
+
+    .option {
+        font-size: 0.8rem;
+    }
+
 }

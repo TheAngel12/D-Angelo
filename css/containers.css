@@ -1,7 +1,7 @@
 body {
     margin: 0;
     background: white;
-
+    min-width: 320px;
 }
 
 header {
@@ -9,9 +9,9 @@ header {
     height: 8rem;
     display: flex;
     justify-content: center;
-    min-width: 499px;
     position: fixed;
     width: 100%;
+    max-width: 320px;
     z-index: 10000;
 }
 
@@ -22,8 +22,8 @@ nav {
     grid-template-areas:
     "logo about contact subs";
     height: 100%;
-    width: 499px;
-    gap: 25px;
+    width: 100%;
+    gap: 15px;
 }
 
 .header-logo {
@@ -73,7 +73,7 @@ main {
 }
 
 hr {
-    width: 499px; 
+    width: 100%; 
     margin: 0 auto;
 }
 
@@ -81,13 +81,13 @@ footer {
     background: #100303;
     height: 8rem;
     width: 100%;
-    min-width: 499px;
     text-align: center;
     margin-top: 40px;
     display: flex;
     flex-direction: column;
     align-content: center;
     justify-content: center;
+    padding-bottom: 10px;
 
 }
 
@@ -103,6 +103,12 @@ button {
 
 }
 
+.subs-button {
+    font-size: 0.6rem;
+    height: 2rem;
+    width: 4rem;
+}
+
 button:hover {
     background: rgba(0, 0, 0, 0.6);
     color: #da2d2d;
@@ -113,17 +119,56 @@ button:hover {
 }
 
 .social-media {
-    margin: 50px;
+    margin: 20px;
 }
 
 sidebar {
     margin: 20px;
 }
 
+.option {
+    font-size: 0.5rem;
+}
+
+
+@media (min-width: 321px) and (max-width: 498px) {
+    header {
+        max-width: none;
+    }
+}
+
+@media (min-width: 499px) and (max-width: 1174px) {
+
+    .subs-button {
+        font-size: 1rem;
+        height: 3rem;
+        width: 7rem;
+    }
+
+    header {
+        max-width: none;
+    }
+
+    nav {
+        gap: 25px;
+        width: 499px;
+    }
+}
+
 @media (min-width: 1175px) {
+
+    .subs-button {
+        font-size: 1rem;
+        height: 3rem;
+        width: 7rem;
+    }
 
     nav {
         width: 1130px;
+    }
+
+    header {
+        max-width: none;
     }
 
     hr {
@@ -140,6 +185,10 @@ sidebar {
         margin: 10px auto;
         gap: 5px 30px;
 
+    }
+
+    .social-media {
+        margin: 30px;
     }
 
 }

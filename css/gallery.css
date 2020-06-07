@@ -36,7 +36,7 @@
     background-color: aqua;
     position: relative;
     height: 499px;
-    width: 499px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -53,12 +53,12 @@
 
 .big-post img {
     height: 499px;
-    width: 499px;
+    width: 100%;
 }
 
 .small-post img {
     height: 242px;
-    width: 499px;
+    width: 100%;
 }
 
 .post-content {
@@ -101,7 +101,7 @@
     background-color: darkcyan;
     position: relative;
     height: 242px;
-    width: 499px;
+    width: 100%;
     overflow: hidden;
 }
 
@@ -111,6 +111,12 @@
 
 .small-post:hover .post-content{
     visibility: visible;
+}
+
+@media (min-width: 499px) and (max-width: 1174px) {
+    .big-post, .small-post {
+        width: 499px;
+    }
 }
 
 @media (min-width: 1175px) {
@@ -131,12 +137,10 @@
 
     .big-post img {
         height: 499px;
-        width: 360px;
     }
 
     .small-post img {
         height: 242px;
-        width: 360px;
     }
 
     .main-left {
