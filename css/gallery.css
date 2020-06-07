@@ -1,0 +1,153 @@
+
+.main-posts {
+    display: flex;
+    flex-direction: column;
+}
+
+.main-left {
+    display: grid;
+    grid-area: gallery;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    margin: 10px auto;
+    max-height: 761px;
+}
+
+.main-right {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr;
+    margin: 10px auto 0px;
+    max-height: 761px;
+}
+
+.main-center {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    margin: 10px auto;
+    max-height: 761px;
+}
+
+.big-post {
+    background-color: aqua;
+    position: relative;
+    height: 499px;
+    width: 499px;
+    overflow: hidden;
+}
+
+.post-img {
+    position: relative;
+    overflow: hidden;
+}
+
+.background {
+    max-width: 100%;
+    max-height: 499px;
+    transition: transform 2s;
+}
+
+.big-post img {
+    height: 499px;
+    width: 499px;
+}
+
+.small-post img {
+    height: 242px;
+    width: 499px;
+}
+
+.post-content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    visibility: hidden;
+    height: 100%;
+}
+
+.flex-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+}
+
+.post-title {
+    margin-bottom: 0;
+}
+
+.post-description {
+    margin-top: 5px;
+}
+
+.big-post:hover .post-img img {
+    transform: scale(1.2);
+}
+
+.big-post:hover .post-content {
+    visibility: visible;
+}
+
+.small-post {
+    background-color: darkcyan;
+    position: relative;
+    height: 242px;
+    width: 499px;
+    overflow: hidden;
+}
+
+.small-post:hover .post-img img {
+    transform: scale(1.2);
+}
+
+.small-post:hover .post-content{
+    visibility: visible;
+}
+
+@media (min-width: 1175px) {
+
+    .main-posts {
+        display: grid;
+        grid-gap: 30px;
+        grid-template-columns: repeat(3, 360px);
+        grid-template-rows: 1fr;
+        grid-template-areas:
+        "main-left main-center main-right";
+        justify-content: center;
+    }
+
+    .big-post, .small-post {
+        width: 360px;
+    }
+
+    .big-post img {
+        height: 499px;
+        width: 360px;
+    }
+
+    .small-post img {
+        height: 242px;
+        width: 360px;
+    }
+
+    .main-left {
+        grid-area: main-left;
+    }
+
+    .main-center {
+        grid-area: main-center;
+    }
+
+    .main-right {
+        grid-area: main-right;
+    }
+}

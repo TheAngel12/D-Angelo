@@ -1,0 +1,104 @@
+
+body {
+    font-family: 'Josefin Slab', serif;
+}
+
+
+h1 {
+    color: #da2d2d;
+    font-family: 'Qwigley', cursive;
+    font-size: 3rem;
+    font-weight: normal;
+}
+
+.main-logo {
+    font-size: 8rem;
+    margin-bottom: 20px;
+    margin-top: 200px;
+}
+
+.header-logo {
+    color: #da2d2d;
+    margin-left: 10px;
+}
+
+button {
+    font-family: 'Josefin Slab', serif;
+}
+
+h2, p {
+    color: white;
+}
+
+header a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+}
+
+header a:hover {
+    color: #da2d2d;
+}
+
+.option:hover {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;
+    text-align: center;
+    margin: 20px;
+    font-size: 0.8rem;
+}
+
+footer a:hover {
+    color: #da2d2d;
+}
+
+.post h1 {
+    font-size: 6rem;
+}
+
+.post h2 {
+    color: black;
+    font-size: 3rem;
+}
+
+.post p {
+    color: black;
+    font-size: 2rem;
+}
+
+.post li {
+    color: black;
+    font-size: 1.5rem;
+    margin: 20px;
+}
+
+.subs-h1 {
+    margin-bottom: 0;
+}
+
+.author h2 {
+    font-size: 1.7rem;
+    color: white;
+}
+
+.author h3 {
+    font-size: 1.1rem;
+    color: white;
+    margin-top: 0;
+}
+
+.author p {
+    font-size: 1rem;
+    color: white;
+    margin: 20px;
+}
+
+span {
+    font-weight: bold;
+}

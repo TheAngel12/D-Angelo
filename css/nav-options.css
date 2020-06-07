@@ -1,0 +1,44 @@
+@import url("./post.css");
+
+.post {
+    grid-template-areas:
+        "top"
+        "bottom";
+}
+
+.content {
+    grid-area: top;
+}
+
+.author {
+    grid-area: bottom;
+}
+
+.post-container {
+    margin-top: 100px;
+}
+
+
+@media (min-width: 800px) and (max-width: 1174px) {
+    .post ul {
+        margin: 50px;
+    }
+}
+
+@media (min-width: 1175px) {
+    .post {
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 550px;
+        grid-template-areas:
+        "left right";
+    }
+    
+    .content {
+        grid-area: left;
+    }
+
+    .author {
+        grid-area: right;
+    }
+
+}

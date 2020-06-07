@@ -1,0 +1,145 @@
+body {
+    margin: 0;
+    background: white;
+
+}
+
+header {
+    background-color: rgba(0, 0, 0, 0.9);
+    height: 8rem;
+    display: flex;
+    justify-content: center;
+    min-width: 499px;
+    position: fixed;
+    width: 100%;
+    z-index: 10000;
+}
+
+nav {
+    display: grid;
+    grid-template-columns: 3fr repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "logo about contact subs";
+    height: 100%;
+    width: 499px;
+    gap: 25px;
+}
+
+.header-logo {
+    grid-area: logo;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    justify-self: left;
+}
+
+.about {
+    grid-area: about;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.contact-us {
+    grid-area: contact;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+.subs {
+    grid-area: subs;
+    display: grid;
+    align-content: center;
+    justify-content: center;
+}
+
+main {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    grid-template-areas:
+    "gallery"
+    "subs";
+    text-align: center;
+}
+
+.more-posts {
+    display: grid;
+    gap: 20px;
+    justify-content: center;
+}
+
+hr {
+    width: 499px; 
+    margin: 0 auto;
+}
+
+footer {
+    background: #100303;
+    height: 8rem;
+    width: 100%;
+    min-width: 499px;
+    text-align: center;
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+
+}
+
+button {
+    background: none;
+    border: 2px solid; 
+    color: #f4f4f4;
+    font-size: 0.9rem;
+    font-weight: 900;
+    margin-right: 10px;
+    height: 3rem;
+    width: 7rem;
+
+}
+
+button:hover {
+    background: rgba(0, 0, 0, 0.6);
+    color: #da2d2d;
+}
+
+.post-button {
+    color: white;
+}
+
+.social-media {
+    margin: 50px;
+}
+
+sidebar {
+    margin: 20px;
+}
+
+@media (min-width: 1175px) {
+
+    nav {
+        width: 1130px;
+    }
+
+    hr {
+        width: 1130px;
+    }
+
+    .more-posts {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 262px;
+        grid-template-areas: 
+        "first-left first-middle first-right"
+        "second-left second-middle second-right";
+        width: 1130px;
+        margin: 10px auto;
+        gap: 5px 30px;
+
+    }
+
+}
