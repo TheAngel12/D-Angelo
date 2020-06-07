@@ -23,7 +23,7 @@ nav {
     "logo about contact subs";
     height: 100%;
     width: 100%;
-    gap: 10px;
+    gap: 5px;
 }
 
 .header-logo {
@@ -103,11 +103,6 @@ button {
 
 }
 
-.subs-button {
-    font-size: 0.5rem;
-    height: 2rem;
-    width: 4rem;
-}
 
 button:hover {
     background: rgba(0, 0, 0, 0.6);
