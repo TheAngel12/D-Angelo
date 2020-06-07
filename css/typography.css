@@ -100,6 +100,11 @@ footer a:hover {
     margin: 20px;
 }
 
+input {
+    font-family: 'Josefin Slab', serif;
+    font-weight: bold;
+    height: 1rem;
+}
 
 span {
     font-weight: bold;

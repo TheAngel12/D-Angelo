@@ -26,7 +26,7 @@
 
 }
 
-.input {
+input {
     margin: 10px;
 }
 
@@ -59,4 +59,5 @@
         right: 10%;
         left: 10%;
     }
+    
 }
