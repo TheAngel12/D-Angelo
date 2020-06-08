@@ -142,5 +142,11 @@ span {
     .option {
         font-size: 0.8rem;
     }
+    
+    .subs-button {
+        font-size: 1rem;
+        height: 3rem;
+        width: 7rem;
+    }
 
 }

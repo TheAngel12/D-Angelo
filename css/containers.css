@@ -134,12 +134,6 @@ sidebar {
 
 @media (min-width: 499px) and (max-width: 1174px) {
 
-    .subs-button {
-        font-size: 1rem;
-        height: 3rem;
-        width: 7rem;
-    }
-
     header {
         max-width: none;
     }
