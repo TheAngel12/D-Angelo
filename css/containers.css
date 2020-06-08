@@ -23,7 +23,7 @@ nav {
     "logo about contact subs";
     height: 100%;
     width: 100%;
-    gap: 5px;
+    gap: 10px;
 }
 
 .header-logo {
