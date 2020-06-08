@@ -26,6 +26,13 @@ nav {
     gap: 10px;
 }
 
+figure {
+    margin: 0;
+    width: 100%;
+    display: grid;
+    gap: 20px;
+}
+
 .header-logo {
     grid-area: logo;
     display: grid;
